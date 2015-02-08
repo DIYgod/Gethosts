@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="keywords" content="hosts">
+<title>Hosts使用帮助</title>
+<link href="common.css" rel="stylesheet">
+<link href="help.css" rel="stylesheet">
+<style>.help-cont a{color:red;}</style>
+</head>
+
+<body>
+<div class="head-warp">
+  <div class="head">
+    <h1><a href="http://tieba.baidu.com/f?ie=utf-8&kw=chrome"><img alt="Chrome" src="chrome_logo_2x.png" style="width:140px"></a></h1>
+    <div class="nav-box">
+      <ul>
+          <li class="cur"><a href="index.html">首页</a></li>
+          <li class="last"><a href="http://tieba.baidu.com/f?ie=utf-8&kw=chrome" target="_blank">百度贴吧&gt;&gt;</a></li>
+      </ul>
+      <div class="nav-line" style="left: 274px; width: 52px;"></div>
+    </div>
+  </div>
+</div>
+<div class="main">
+  <div class="help clearfix">
+    <div class="help-side fl">
+      <dl>
+        <dt>帮助导航</dt>
+        <dd class="cur"><a href="index.html">Hosts常见问题</a></dd> 
+        <dd><a href="download.html">Chrome下载安装</a></dd>
+		<dd><a href="https://support.google.com/chrome/?hl=zh-Hans">Chrome官方帮助</a></dd>
+      </dl>
+       <div class="side-slider" style="top: 24px;"></div>
+    </div>
+    <div class="help-cont">
+      <h2>常见问题</h2>
+	  
+      <dl>
+        <dt><a href="index.html#nogo">Hosts文件</a></dt>
+        <dd style="display: none;">想要下载Chrome吧提供的hosts文件请点<a href="http://gethosts.jd-app.com/404.html">这里</a>，解压后移动到C:\Windows\System32\drivers\etc（如果已存在请覆盖，如果想恢复只需直接删除该文件，不会对系统造成影响）。完成后在命令行程序中执行ipconfig /flushdns即可即时生效。<br>linux系统下，在解压好的文件所在位置执行sudo cp ./hosts /etc/hosts && sudo /etc/init.d/networking restart即可
+		<br>
+		<br>啥，有解压密码？快回去原帖三楼查找。Mac用户请用第三方解压软件解压，系统暂时无法解压（不知道出了什么问题）
+      </dd></dl>
+	  
+	  <dl>
+	  <dt><a href="index.html#nogo">如何还原修改状态</a></dt>
+	  <dd style="display: none;">如果想恢复只需直接删除该文件，不会对系统造成影响
+	  </dd></dl>
+	  
+	  <dl>
+	  <dt><a href="index.html#nogo">改了hosts文件依然没有效果</a></dt>
+	  <dd style="display: none;">目前有N种可能
+	  <br>1.新疆地区屏蔽了Google 北京 IP，请重新下载一份新疆专用的hosts<br>非新疆用户最好不要使用以避免下载扩展时出现Download interrupted
+	  <br>2.你的网络与GGC IP连接的443端口被屏蔽掉了<br>按照<a href="http://jingyan.baidu.com/article/a3aad71aa9e6efb1fb009694.html">这里</a>的提示测试能否连通hosts内置IP
+	  <br>3.hosts已被和谐，尝试更换压缩文件内“必看”提供的备用IP或等待更新
+	  <br>4.你的 “安全软件” 很 “负责任”的把修改完的hosts改了回去，添加白名单并重新覆盖
+	  <br>5.某些网站需要 https 才可以打开，例如Google快照并没有强制https访问
+	  </dd></dl>
+	  
+	  <dl>
+	  <dt><a href="index.html#nogo">下载扩展出现Download interrupted</a></dt>
+	  <dd style="display: none;">1.hosts已被和谐，尝试更换压缩文件内“必看”提供的备用IP或等待更新
+	  <br>2.你被GFW暂时性阻断了，稍后再试
+	  </dd></dl>
+	  
+	  <dl>
+	  <dt><a href="index.html#nogo">浏览器出现了广告、上网出现了异常</a></dt>
+	  <dd style="display: none;">别闹了，快去检查一下你添加的扩展是否有问题（Google 审核门槛很低，导致应用商店充斥着恶意扩展）
+	  <br>如果你觉得hosts文件有问题，删除它即可，对系统无影响
+	  </dd></dl>
+	  
+	  <dl>
+	  <dt><a href="index.html#nogo">安全软件报风险</a></dt>
+	  <dd style="display: none;">hosts其实是个较敏感的文件，它可以把某个域名指定到某个IP上。
+	  <br>例如你要访问淘宝，但他把你劫持到了钓鱼网站，后果可想而知。所以它是各类恶意软件的争夺之地
+	  <br>我们提供的hosts不会做这样缺德的事，所有IP均在Google官方IP段内
+	  </dd></dl>
+	  
+	  <dl>
+	  <dt><a href="index.html#nogo">我可以在移动设备上使用吗</a></dt>
+	  <dd style="display: none;">移动设备上的换行符和我们提供的hosts并不相同，需要自行dos2unix转换
+	  <br>并且我们没有加入 移动页面、Android 服务的支持，故不推荐使用
+	  </dd></dl>
+	  
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <p>Copyleft©2005-2015 百度Chrome吧<br>
+    建议使用<a href="download.html" target="_blank">Google Chrome浏览器</a>访问本站<br>
+	  本页面为静态网页，仅供查询，不支持在线答疑</p>
+
+</div>
+<script src="http://lib.sinaapp.com/js/jquery/1.7.2/jquery.min.js"></script> 
+<script src="main-test.js"></script>
+
+</body></html>

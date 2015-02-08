@@ -1,0 +1,16 @@
+.main { padding-top:42px;}
+/*help*/
+.help { margin-bottom:102px; background:url(http://p1.qhimg.com/d/360browser/20121009/line03.gif) repeat-y 184px 0; min-height:670px;}
+.help-side { width:184px; position:relative;}
+.help-side dl { background:url(http://p1.qhimg.com/d/360browser/20121009/line02.gif) no-repeat 0 bottom; padding-bottom:14px; margin-bottom:12px; line-height:24px;}
+.help-side dl.last { background:none;}
+.help-side dl dt { font-weight:700; color:#333;}
+.help-side dl dd.cur a,.help-side dl dd a:hover { color:#35C4FD; text-decoration:none;}
+.help-side .side-slider { position:absolute; width:3px; background:#35C4FD; height:20px; left:-18px; top:27px;}
+.help-cont { margin-left:185px; padding-left:32px;  font-size:14px; color:#333;}
+.help-cont h2 { font-weight:700; margin-bottom:16px; }
+.help-cont p { line-height:24px; padding:0 0 30px;}
+.help-cont p a,.help-cont dl dt a { color:#0078b6;}
+.help-cont dl { margin-bottom:10px;}
+.help-cont dl dt { background:url(http://p1.qhimg.com/d/360browser/20121009/icon05.png) no-repeat 0 2px; padding-left:26px; margin-bottom:5px;}
+.help-cont dl dd { color:#808080; line-height:22px; padding-left:26px; display:none;}

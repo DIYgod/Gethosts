@@ -1,0 +1,35 @@
+Windows Registry Editor Version 5.00
+
+; WARNING, this file will remove Google Chrome registry entries  
+; from your Windows Registry. Consider backing up your registry before
+; using this file: http://support.microsoft.com/kb/322756
+
+; To run this file, save it as 'remove.reg' on your desktop and double-click it.
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ChromeHTML] 
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Clients\StartMenuInternet\chrome.exe] 
+[HKEY_LOCAL_MACHINE\SOFTWARE\RegisteredApplications]
+"Chrome"=-
+
+
+[-HKEY_CURRENT_USER\SOFTWARE\Classes\ChromeHTML] 
+[-HKEY_CURRENT_USER\SOFTWARE\Clients\StartMenuInternet\chrome.exe] 
+[HKEY_CURRENT_USER\SOFTWARE\RegisteredApplications]
+"Chrome"=-
+
+
+[-HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Uninstall\Chrome]
+[-HKEY_CURRENT_USER\Software\Google\]
+[-HKEY_CURRENT_USER\Software\Google\]
+
+
+[-HKEY_CURRENT_USER\Software\Google\]
+[-HKEY_CURRENT_USER\Software\Google\]
+
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Google\]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Google\]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Google\]
+
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Google\]
